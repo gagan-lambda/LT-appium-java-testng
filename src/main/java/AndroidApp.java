@@ -24,7 +24,7 @@ public class AndroidApp {
     public void AndroidApp1(String device, String version, String platform) {
         try {
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("build","Java TestNG Android");
+            capabilities.setCapability("build","Android Test Build");
             capabilities.setCapability("name",platform+" "+device+" "+version);
             capabilities.setCapability("deviceName", device);
             capabilities.setCapability("platformVersion",version);

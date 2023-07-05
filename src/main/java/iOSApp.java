@@ -25,7 +25,7 @@ public class iOSApp {
 
         try {
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("build","Java TestNG iOS");
+            capabilities.setCapability("build","IOS test Build");
             capabilities.setCapability("name",platform+" "+device+" "+version);
             capabilities.setCapability("deviceName", device);
             capabilities.setCapability("platformVersion",version);
