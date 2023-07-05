@@ -45,7 +45,7 @@ public class AndroidApp {
             MobileElement color = (MobileElement) driver.findElementById("com.lambdatest.proverbial:id/color");
             //Changes color to pink
             color.click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             //Back to orginal color
             color.click();
 
@@ -60,12 +60,12 @@ public class AndroidApp {
             //notification will be visible
             MobileElement notification = (MobileElement) driver.findElementById("com.lambdatest.proverbial:id/notification");
             notification.click();
-            Thread.sleep(2000);
+            Thread.sleep(4000);
 
             //Opens the geolocation page
             MobileElement geo = (MobileElement) driver.findElementById("com.lambdatest.proverbial:id/geoLocation");
             geo.click();
-            Thread.sleep(5000);
+            Thread.sleep(7000);
 
             //takes back to home page
             MobileElement home = (MobileElement) driver.findElementByAccessibilityId("Home");

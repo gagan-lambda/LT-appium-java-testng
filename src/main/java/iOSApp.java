@@ -46,15 +46,15 @@ public class iOSApp {
 
             //Changes the color of the text
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("color"))).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
 
             //Changes the text to "Proverbial"
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Text"))).click();
-            Thread.sleep(1000);
+            Thread.sleep(4000);
 
             //Toast will be visible
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("toast"))).click();
-            Thread.sleep(1000);
+            Thread.sleep(5000);
 
             //Notification will be visible
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("notification"))).click();
@@ -62,27 +62,27 @@ public class iOSApp {
 
             //Opens the geolocation page
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("geoLocation"))).click();
-            Thread.sleep(4000);
+            Thread.sleep(7000);
 
             //Takes back
             driver.navigate().back();
 
             //Takes to speedtest page
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("speedTest"))).click();
-            Thread.sleep(4000);
+            Thread.sleep(5000);
 
             driver.navigate().back();
 
             //Opens the browser
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Browser"))).click();
-            Thread.sleep(1000);
+            Thread.sleep(3000);
 
             MobileElement url = (MobileElement) driver.findElementByAccessibilityId("url");
             url.click();
             url.sendKeys("https://www.lambdatest.com");
 
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("find"))).click();
-            Thread.sleep(1000);
+            Thread.sleep(5000);
 
             driver.quit();
 
