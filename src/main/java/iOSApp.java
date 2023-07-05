@@ -12,10 +12,8 @@ import org.testng.annotations.Test;
 
 public class iOSApp {
 
-    String userName = System.getenv("LT_USERNAME") == null ?
-            "username" : System.getenv("LT_USERNAME"); //Add username here
-    String accessKey = System.getenv("LT_ACCESS_KEY") == null ?
-            "accessKey" : System.getenv("LT_ACCESS_KEY"); //Add accessKey here
+    String userName = "gagandeepb";//Add username here
+    String accessKey = "KZCghqXcnDAkO3kuErqkRKoQGgzXzzV95L4gJSf7dIaJPpCzpL";
 
     public String gridURL = "@mobile-hub.lambdatest.com/wd/hub";
 
@@ -33,7 +31,7 @@ public class iOSApp {
             capabilities.setCapability("platformVersion",version);
             capabilities.setCapability("platformName", platform);
             capabilities.setCapability("isRealMobile", true);
-            capabilities.setCapability("app", "lt://proverbial-ios"); //Enter your app url
+            capabilities.setCapability("app", "lt://APP1016033751688548528046780"); //Enter your app url
             capabilities.setCapability("deviceOrientation", "PORTRAIT");
             capabilities.setCapability("console", true);
             capabilities.setCapability("network", false);
