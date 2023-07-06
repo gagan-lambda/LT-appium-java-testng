@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+
 import org.testng.annotations.Test;
 
 public class iOSApp {
@@ -24,8 +26,10 @@ public class iOSApp {
     public void iOSApp1(String device, String version, String platform) {
 
         try {
+            String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("build","IOS test Build");
+            capabilities.setCapability("build","IOS test Build"+timeStamp);
             capabilities.setCapability("name",platform+" "+device+" "+version);
             capabilities.setCapability("deviceName", device);
             capabilities.setCapability("platformVersion",version);
@@ -82,7 +86,7 @@ public class iOSApp {
             url.sendKeys("https://www.lambdatest.com");
 
             Wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("find"))).click();
-            Thread.sleep(5000);
+            Thread.sleep(10000);
 
             driver.quit();
 
